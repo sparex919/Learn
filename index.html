@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Video Library</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>📚 My Video Library</h1>
+
+<input
+type="text"
+id="search"
+placeholder="Search lecture..."
+>
+
+<div id="videoList"></div>
+
+<h2 id="nowPlaying">Select a lecture</h2>
+
+<iframe
+id="player"
+width="100%"
+height="300"
+style="display:none;border:none;border-radius:12px;"
+allow="autoplay; fullscreen"
+allowfullscreen>
+</iframe>
+
+<script src="script.js"></script>
+
+</body>
+</html>
