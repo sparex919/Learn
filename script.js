@@ -68,10 +68,11 @@ function load(list){
 
         div.onclick = () => {
 
-    localStorage.setItem("videoTitle", video.title);
-    localStorage.setItem("videoUrl", video.url);
+    nowPlaying.innerText = video.title;
 
-    window.location.href = "player.html";
+    player.style.display = "block";
+
+    player.src = video.url;
 
 };
 
