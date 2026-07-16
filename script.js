@@ -66,15 +66,14 @@ function load(list){
 
         div.innerHTML="▶ "+video.title;
 
-        div.onclick=()=>{
+        div.onclick = () => {
 
-            nowPlaying.innerText=video.title;
+    localStorage.setItem("videoTitle", video.title);
+    localStorage.setItem("videoUrl", video.url);
 
-            player.style.display="block";
+    window.location.href = "player.html";
 
-            player.src=video.url;
-
-        };
+};
 
         videoList.appendChild(div);
 
